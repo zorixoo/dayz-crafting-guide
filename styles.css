@@ -1,0 +1,50 @@
+body {
+  font-family: 'Libertinus Mono', monospace;
+  background-color: #013220; /* Dark green */
+  color: #D9D9D9; /* Light gray text */
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+h1 {
+  text-align: center;
+  color: #B5A77C; /* Muted tan */
+  margin-bottom: 1em;
+}
+
+#search {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  background-color: #3B5323; /* Olive green */
+  color: #D9D9D9;
+  border: 1px solid #4A633E; /* Army green border */
+  border-radius: 5px;
+}
+
+#search::placeholder {
+  color: #B5A77C; /* Muted tan */
+}
+
+#recipe-list {
+  background-color: #2D2D2D; /* Dark gray */
+  padding: 15px;
+  border-radius: 6px;
+  color: #F0F0E6; /* Off-white text */
+  border: 1px solid #4A633E; /* Army green */
+}
+
+button {
+  background-color: #7C4A1F; /* Rust brown */
+  color: #F0F0E6; /* Off-white */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #B5A77C; /* Muted tan */
+  color: #013220; /* Dark green */
+}
