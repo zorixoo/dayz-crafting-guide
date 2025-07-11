@@ -34,3 +34,16 @@ body::after {
   background: rgba(35, 61, 31, 0.6); /* match your green tone with transparency */
   z-index: -1;
 }
+
+/* Map modal container styling */
+#map-container {
+  height: 450px;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Leaflet map container styling */
+#map {
+  height: 100%;
+  width: 100%;
+}
