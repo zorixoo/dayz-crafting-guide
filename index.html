@@ -1,9 +1,33 @@
-<!DOCTYPE html>
+<!<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>DayZ Crafting Guide</title>
+
+  <!-- 🔍 SEO Meta Tags -->
+  <meta name="description" content="Accurate DayZ 1.28 Crafting Guide. Search, filter, and explore every vanilla recipe with ease." />
+  <meta name="keywords" content="DayZ crafting, DayZ 1.28 recipes, DayZ vanilla, DayZ map, DayZ guide, DayZ crafting guide, DayZ tools, DayZ backpack, DayZ weapons, DayZ survival tips" />
+  <meta name="author" content="Jacob Freier" />
+
+  <!-- 🌐 Open Graph for social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="DayZ Crafting Guide - 1.28 Recipes & Map" />
+  <meta property="og:description" content="The most complete DayZ vanilla 1.28 crafting guide. Filter by category, search fast, and explore all recipes." />
+  <meta property="og:url" content="https://yourdomain.com/" />
+  <meta property="og:image" content="https://yourdomain.com/preview.jpg" />
+  <meta property="og:site_name" content="DayZ Crafting Guide" />
+
+  <!-- 🐦 Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DayZ Crafting Guide - All 1.28 Recipes" />
+  <meta name="twitter:description" content="Search and explore all vanilla 1.28 DayZ recipes with filters and categories." />
+  <meta name="twitter:image" content="https://yourdomain.com/preview.jpg" />
+
+  <!-- ✅ Canonical Link & Favicon (optional) -->
+  <link rel="canonical" href="https://yourdomain.com/" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap" rel="stylesheet" />
@@ -14,42 +38,37 @@
       margin: 20px auto;
       max-width: 600px;
       color: #d9e6c9;
-      background-color: #233d1f; /* fallback dark green */
+      background-color: #233d1f;
       overflow-x: hidden;
     }
-
-    /* Blurred background image */
     body::before {
       content: "";
-      position: fixed; /* stays in place when scrolling */
+      position: fixed;
       top: 0;
       left: 0;
       width: 100vw;
       height: 100vh;
-      background-image: url('68540-DayZ.jpg'); /* your image */
+      background-image: url('68540-DayZ.jpg');
       background-size: cover;
       background-position: center;
       filter: blur(12px);
       opacity: 0.25;
-      z-index: -1; /* behind everything */
+      z-index: -1;
     }
-
-    /* Semi-transparent green overlay for contrast */
     body::after {
       content: "";
       position: fixed;
-      top: 0; left: 0;
+      top: 0;
+      left: 0;
       width: 100vw;
       height: 100vh;
       background: rgba(35, 61, 31, 0.6);
       z-index: -1;
     }
-
     h1 {
       text-align: center;
       margin-bottom: 20px;
     }
-
     #search {
       width: 100%;
       padding: 10px;
@@ -62,17 +81,14 @@
       color: #d9e6c9;
       transition: box-shadow 0.3s ease, border-color 0.3s ease;
     }
-
     #search::placeholder {
       color: #b5a77c;
     }
-
     #search:focus {
       outline: none;
       box-shadow: 0 0 8px #b5a77c;
       border-color: #b5a77c;
     }
-
     #category-filter {
       width: 100%;
       padding: 10px;
@@ -86,13 +102,11 @@
       cursor: pointer;
       transition: background-color 0.3s ease, transform 0.2s ease;
     }
-
     #category-filter:hover {
       background-color: #b5a77c;
       color: #233d1f;
       transform: scale(1.05);
     }
-
     #recipe-list {
       background-color: #304927;
       padding: 15px;
@@ -101,7 +115,6 @@
       border: 1px solid #4a633e;
       min-height: 300px;
     }
-
     .recipe-item {
       background-color: #1f3d1f;
       border-radius: 5px;
@@ -111,46 +124,35 @@
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       opacity: 0;
       animation: fadeIn 0.7s forwards;
-      border-left: 5px solid transparent; /* default */
+      border-left: 5px solid transparent;
     }
-
     @keyframes fadeIn {
       to {
         opacity: 1;
       }
     }
-
     .recipe-item:hover {
       transform: scale(1.03);
       box-shadow: 0 8px 15px rgba(181, 167, 124, 0.5);
     }
-
-    /* Category border colors */
     .recipe-item[data-category="Weapons"] {
-      border-left-color: #d9534f; /* red */
+      border-left-color: #d9534f;
     }
-
     .recipe-item[data-category="Medical"] {
-      border-left-color: #5bc0de; /* blue */
+      border-left-color: #5bc0de;
     }
-
     .recipe-item[data-category="Clothing & Backpacks"] {
-      border-left-color: #b5a77c; /* muted tan */
+      border-left-color: #b5a77c;
     }
-
     .recipe-item[data-category="Crafting Resources"] {
-      border-left-color: #7c4a1f; /* rust brown */
+      border-left-color: #7c4a1f;
     }
-
     .recipe-item[data-category="Base Building"] {
-      border-left-color: #4a633e; /* army green */
+      border-left-color: #4a633e;
     }
-
     .recipe-item[data-category="Survival"] {
-      border-left-color: #3b5323; /* olive green */
+      border-left-color: #3b5323;
     }
-
-    /* Useful links panel fixed bottom-left */
     #useful-links {
       position: fixed;
       bottom: 10px;
@@ -168,14 +170,12 @@
       font-size: 14px;
       font-weight: 500;
     }
-
     #useful-links .buttons {
       display: flex;
       flex-direction: column;
       gap: 10px;
       min-width: 220px;
     }
-
     #useful-links button {
       background-color: #3a6b27;
       color: #d9e6c9;
@@ -188,17 +188,14 @@
       width: 200px;
       text-align: left;
     }
-
     #useful-links button:hover {
       background-color: #5ca64c;
       transform: scale(1.05);
     }
-
     #useful-links .info-text {
       max-width: 350px;
       line-height: 1.3;
     }
-
     @media (max-width: 640px) {
       #useful-links {
         flex-direction: column;
