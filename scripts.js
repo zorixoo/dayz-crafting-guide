@@ -6,19 +6,34 @@ fetch('recipes.json')
     recipes = data;
     populateCategoryFilter();
     displayRecipes(recipes);
+  })
+  .catch(error => {
+    console.error("Failed to load recipes:", error);
   });
 
 function displayRecipes(list) {
   const container = document.getElementById('recipe-list');
   container.innerHTML = '';
+
   list.forEach(recipe => {
+    const ingredientsText = Array.isArray(recipe.ingredients)
+      ? recipe.ingredients
+          .map(i => `${i.amount ?? '?'} × ${i.item ?? 'Unknown Item'}`)
+          .join(', ')
+      : 'None';
+
+    const toolsText = Array.isArray(recipe.tools) && recipe.tools.length
+      ? recipe.tools.join(', ')
+      : 'None';
+
     const div = document.createElement('div');
     div.className = 'recipe-item';
-    div.innerHTML = `<h2>${recipe.item}</h2>
-                     <p><strong>Category:</strong> ${recipe.category}</p>
-                     <p><strong>Ingredients:</strong> ${recipe.ingredients.join(', ')}</p>
-                     <p><strong>Tools:</strong> ${recipe.tools.length ? recipe.tools.join(', ') : 'None'}</p>
-                     <p><strong>Instructions:</strong><br>${recipe.instructions.join('<br>')}</p>`;
+    div.innerHTML = `
+      <h2>${recipe.name ?? 'Unnamed Recipe'}</h2>
+      <p><strong>Category:</strong> ${recipe.category ?? 'Uncategorized'}</p>
+      <p><strong>Ingredients:</strong> ${ingredientsText}</p>
+      <p><strong>Tools:</strong> ${toolsText}</p>
+    `;
     container.appendChild(div);
   });
 }
@@ -28,7 +43,7 @@ function filterAndDisplay() {
   const selectedCategory = document.getElementById('category-filter').value;
 
   const filtered = recipes.filter(recipe => {
-    const matchesSearch = recipe.item.toLowerCase().includes(searchTerm);
+    const matchesSearch = recipe.name?.toLowerCase().includes(searchTerm) ?? false;
     const matchesCategory = selectedCategory === 'All' || recipe.category === selectedCategory;
     return matchesSearch && matchesCategory;
   });
