@@ -1,50 +1,36 @@
 body {
+  position: relative;
   font-family: 'Libertinus Mono', monospace;
-  background-color: #013220; /* Dark green */
-  color: #D9D9D9; /* Light gray text */
   margin: 20px auto;
   max-width: 600px;
+  color: #d9e6c9;
+  background-color: #233d1f; /* fallback dark green */
+  overflow-x: hidden;
 }
 
-h1 {
-  text-align: center;
-  color: #B5A77C; /* Muted tan */
-  margin-bottom: 1em;
+/* Create a blurred background layer */
+body::before {
+  content: "";
+  position: fixed; /* fixed so it stays put on scroll */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('68540-DayZ.jpg'); /* your image */
+  background-size: cover;
+  background-position: center;
+  filter: blur(12px);
+  opacity: 0.25; /* subtle so text stands out */
+  z-index: -1; /* behind everything */
 }
 
-#search {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  font-size: 16px;
-  background-color: #3B5323; /* Olive green */
-  color: #D9D9D9;
-  border: 1px solid #4A633E; /* Army green border */
-  border-radius: 5px;
-}
-
-#search::placeholder {
-  color: #B5A77C; /* Muted tan */
-}
-
-#recipe-list {
-  background-color: #2D2D2D; /* Dark gray */
-  padding: 15px;
-  border-radius: 6px;
-  color: #F0F0E6; /* Off-white text */
-  border: 1px solid #4A633E; /* Army green */
-}
-
-button {
-  background-color: #7C4A1F; /* Rust brown */
-  color: #F0F0E6; /* Off-white */
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #B5A77C; /* Muted tan */
-  color: #013220; /* Dark green */
+/* Optional: add a semi-transparent overlay for better contrast */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(35, 61, 31, 0.6); /* match your green tone with transparency */
+  z-index: -1;
 }
