@@ -18,22 +18,24 @@ function displayRecipes(list) {
   list.forEach(recipe => {
     const ingredientsText = Array.isArray(recipe.ingredients)
       ? recipe.ingredients
-          .map(i => `${i.amount ?? '?'} × ${i.item ?? 'Unknown Item'}`)
+          .map(i => `${i.amount ?? '?'} × ${i.item ?? i}`)  // fallback to i if no item property
           .join(', ')
-      : 'None';
-
-    const toolsText = Array.isArray(recipe.tools) && recipe.tools.length
-      ? recipe.tools.join(', ')
       : 'None';
 
     const div = document.createElement('div');
     div.className = 'recipe-item';
+    div.setAttribute('data-category', recipe.category ?? 'Uncategorized');
     div.innerHTML = `
       <h2>${recipe.name ?? 'Unnamed Recipe'}</h2>
       <p><strong>Category:</strong> ${recipe.category ?? 'Uncategorized'}</p>
       <p><strong>Ingredients:</strong> ${ingredientsText}</p>
-      <p><strong>Tools:</strong> ${toolsText}</p>
     `;
+
+    // Reset animation to replay on each append
+    div.style.animation = 'none';
+    div.offsetHeight; // Trigger reflow to restart animation
+    div.style.animation = '';
+
     container.appendChild(div);
   });
 }
