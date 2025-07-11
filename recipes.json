@@ -2,11 +2,11 @@
   {
     "name": "Improvised Rope",
     "ingredients": [
-      { "amount": 6, "item": "Rags" },
       { "amount": 6, "item": "Rags" }
     ],
     "output": "Improvised Rope",
-    "category": "Crafting Resources"
+    "category": "Crafting Resources",
+    "instructions": "Tear 6 Rags from clothing items or find them. Combine the 6 Rags in your inventory to craft an Improvised Rope."
   },
   {
     "name": "Improvised Rope",
@@ -15,7 +15,8 @@
       { "amount": 1, "item": "Knife" }
     ],
     "output": "Improvised Rope",
-    "category": "Crafting Resources"
+    "category": "Crafting Resources",
+    "instructions": "Use a Knife on a Pile of Guts to craft an Improvised Rope."
   },
   {
     "name": "Short Stick",
@@ -24,7 +25,8 @@
       { "amount": 1, "item": "Knife" }
     ],
     "output": "Short Stick",
-    "category": "Crafting Resources"
+    "category": "Crafting Resources",
+    "instructions": "Use a Knife on a Long Wooden Stick to cut it down into a Short Stick."
   },
   {
     "name": "Short Stick",
@@ -33,7 +35,8 @@
       { "amount": 1, "item": "Hatchet" }
     ],
     "output": "Short Stick",
-    "category": "Crafting Resources"
+    "category": "Crafting Resources",
+    "instructions": "Use a Hatchet on Firewood to create a Short Stick."
   },
   {
     "name": "Plank",
@@ -42,7 +45,8 @@
       { "amount": 1, "item": "Hacksaw" }
     ],
     "output": "Plank",
-    "category": "Crafting Resources"
+    "category": "Crafting Resources",
+    "instructions": "Use a Hacksaw on a Lumber Pile to craft a Plank."
   },
   {
     "name": "Plank",
@@ -51,7 +55,8 @@
       { "amount": 1, "item": "Hacksaw" }
     ],
     "output": "Plank",
-    "category": "Crafting Resources"
+    "category": "Crafting Resources",
+    "instructions": "Use a Hacksaw on a Wooden Log to craft a Plank."
   },
   {
     "name": "Burlap Strips",
@@ -60,7 +65,8 @@
       { "amount": 1, "item": "Knife" }
     ],
     "output": "Burlap Strips",
-    "category": "Crafting Resources"
+    "category": "Crafting Resources",
+    "instructions": "Use a Knife on a Burlap Sack to cut it into Burlap Strips."
   },
   {
     "name": "Assault Helmet with Visor",
@@ -69,7 +75,8 @@
       { "amount": 1, "item": "Assault Helmet Visor" }
     ],
     "output": "Assault Helmet with Visor",
-    "category": "Clothing & Backpacks"
+    "category": "Clothing & Backpacks",
+    "instructions": "Attach an Assault Helmet Visor to an Assault Helmet in your inventory to craft the Assault Helmet with Visor."
   },
   {
     "name": "Assault Vest Buttpack Attached",
@@ -78,7 +85,8 @@
       { "amount": 1, "item": "Utility Buttpack" }
     ],
     "output": "Assault Vest with Buttpack",
-    "category": "Clothing & Backpacks"
+    "category": "Clothing & Backpacks",
+    "instructions": "Combine an Assault Vest with a Utility Buttpack in your inventory to craft an Assault Vest with Buttpack."
   },
   {
     "name": "Ghillie Hood",
@@ -87,7 +95,8 @@
       { "amount": 1, "item": "Netting" }
     ],
     "output": "Ghillie Hood",
-    "category": "Clothing & Backpacks"
+    "category": "Clothing & Backpacks",
+    "instructions": "Combine 2 Burlap Strips with 1 Netting in your inventory to craft a Ghillie Hood."
   },
   {
     "name": "Ghillie Bushrag",
@@ -96,7 +105,8 @@
       { "amount": 2, "item": "Netting" }
     ],
     "output": "Ghillie Bushrag",
-    "category": "Clothing & Backpacks"
+    "category": "Clothing & Backpacks",
+    "instructions": "Combine 4 Burlap Strips with 2 Netting in your inventory to craft a Ghillie Bushrag."
   },
   {
     "name": "Plate Carrier w/ Pouches",
@@ -105,7 +115,8 @@
       { "amount": 1, "item": "Pouches" }
     ],
     "output": "Plate Carrier w/ Pouches",
-    "category": "Clothing & Backpacks"
+    "category": "Clothing & Backpacks",
+    "instructions": "Attach Pouches to a Plate Carrier in your inventory to craft a Plate Carrier with Pouches."
   },
   {
     "name": "Ghillie Suit",
@@ -114,7 +125,8 @@
       { "amount": 4, "item": "Netting" }
     ],
     "output": "Ghillie Suit",
-    "category": "Clothing & Backpacks"
+    "category": "Clothing & Backpacks",
+    "instructions": "Combine 10 Burlap Strips with 4 Netting in your inventory to craft a Ghillie Suit."
   },
   {
     "name": "Ghillie Top",
@@ -123,7 +135,8 @@
       { "amount": 3, "item": "Netting" }
     ],
     "output": "Ghillie Top",
-    "category": "Clothing & Backpacks"
+    "category": "Clothing & Backpacks",
+    "instructions": "Combine 6 Burlap Strips with 3 Netting in your inventory to craft a Ghillie Top."
   },
   {
     "name": "Plate Carrier w/ Pouches and Gun Holster",
@@ -132,7 +145,8 @@
       { "amount": 1, "item": "Gun Holster" }
     ],
     "output": "Plate Carrier Full Setup",
-    "category": "Clothing & Backpacks"
+    "category": "Clothing & Backpacks",
+    "instructions": "Attach a Gun Holster to a Plate Carrier with Pouches in your inventory to craft the full Plate Carrier Setup."
   },
   {
     "name": "Ghillie Rifle Wrap",
@@ -141,25 +155,28 @@
       { "amount": 1, "item": "Netting" }
     ],
     "output": "Ghillie Rifle Wrap",
-    "category": "Clothing & Backpacks"
+    "category": "Clothing & Backpacks",
+    "instructions": "Combine 2 Burlap Strips with 1 Netting in your inventory to craft a Ghillie Rifle Wrap."
   },
   {
-    "name": "Armband",
+    "name": "Armband (Color)",
     "ingredients": [
       { "amount": 1, "item": "Raincoat" },
       { "amount": 1, "item": "Knife" }
     ],
     "output": "Color Armband",
-    "category": "Clothing & Backpacks"
+    "category": "Clothing & Backpacks",
+    "instructions": "Use a Knife on a Raincoat to craft a Color Armband."
   },
   {
-    "name": "Armband",
+    "name": "Armband (White)",
     "ingredients": [
       { "amount": 1, "item": "Rags" },
       { "amount": 1, "item": "Knife" }
     ],
     "output": "White Armband",
-    "category": "Clothing & Backpacks"
+    "category": "Clothing & Backpacks",
+    "instructions": "Use a Knife on Rags to craft a White Armband."
   },
   {
     "name": "Improvised Courier Bag",
@@ -168,7 +185,8 @@
       { "amount": 1, "item": "Rope" }
     ],
     "output": "Courier Bag",
-    "category": "Clothing & Backpacks"
+    "category": "Clothing & Backpacks",
+    "instructions": "Combine a Burlap Sack with Rope in your inventory to craft an Improvised Courier Bag."
   },
   {
     "name": "Improvised Backpack",
@@ -177,16 +195,18 @@
       { "amount": 3, "item": "Wooden Sticks" }
     ],
     "output": "Improvised Backpack",
-    "category": "Clothing & Backpacks"
+    "category": "Clothing & Backpacks",
+    "instructions": "Combine an Improvised Courier Bag with 3 Wooden Sticks in your inventory to craft an Improvised Backpack."
   },
   {
-    "name": "Rag",
+    "name": "Rags",
     "ingredients": [
       { "amount": 1, "item": "Shirt" },
       { "amount": 1, "item": "Knife" }
     ],
     "output": "Rags",
-    "category": "Medical"
+    "category": "Medical",
+    "instructions": "Use a Knife on a Shirt to tear it into Rags."
   },
   {
     "name": "IV Saline Bag",
@@ -195,7 +215,8 @@
       { "amount": 1, "item": "IV Start Kit" }
     ],
     "output": "IV Saline Bag",
-    "category": "Medical"
+    "category": "Medical",
+    "instructions": "Combine a Saline Bag with an IV Start Kit in your inventory to craft an IV Saline Bag."
   },
   {
     "name": "IV Blood Bag",
@@ -204,7 +225,8 @@
       { "amount": 1, "item": "IV Start Kit" }
     ],
     "output": "IV Bloodbag",
-    "category": "Medical"
+    "category": "Medical",
+    "instructions": "Combine a Blood Collection Kit with an IV Start Kit in your inventory to craft an IV Blood Bag."
   },
   {
     "name": "BK-18 Sawed-Off",
@@ -213,7 +235,8 @@
       { "amount": 1, "item": "Hacksaw" }
     ],
     "output": "BK-18 Sawed-Off",
-    "category": "Weapons"
+    "category": "Weapons",
+    "instructions": "Use a Hacksaw on a BK-18 rifle to saw it off into a BK-18 Sawed-Off."
   },
   {
     "name": "BK-43 Sawed-Off",
@@ -222,7 +245,8 @@
       { "amount": 1, "item": "Hacksaw" }
     ],
     "output": "BK-43 Sawed-Off",
-    "category": "Weapons"
+    "category": "Weapons",
+    "instructions": "Use a Hacksaw on a BK-43 rifle to saw it off into a BK-43 Sawed-Off."
   },
   {
     "name": "Mosin 91/30 Sawed-Off",
@@ -231,16 +255,18 @@
       { "amount": 1, "item": "Hacksaw" }
     ],
     "output": "Mosin 91/30 Sawed-Off",
-    "category": "Weapons"
+    "category": "Weapons",
+    "instructions": "Use a Hacksaw on a Mosin 91/30 rifle to saw it off into a Mosin 91/30 Sawed-Off."
   },
   {
-    "name": "Baseball Bat Nailed",
+    "name": "Nailed Baseball Bat",
     "ingredients": [
       { "amount": 1, "item": "Baseball Bat" },
       { "amount": 13, "item": "Nails" }
     ],
     "output": "Nailed Baseball Bat",
-    "category": "Weapons"
+    "category": "Weapons",
+    "instructions": "Attach 13 Nails to a Baseball Bat in your inventory to craft a Nailed Baseball Bat."
   },
   {
     "name": "Improvised Suppressor",
@@ -249,7 +275,8 @@
       { "amount": 1, "item": "Duct Tape" }
     ],
     "output": "Improvised Suppressor",
-    "category": "Weapons"
+    "category": "Weapons",
+    "instructions": "Combine a Plastic Bottle with Duct Tape in your inventory to craft an Improvised Suppressor."
   },
   {
     "name": "Tarp Shelter",
@@ -258,7 +285,8 @@
       { "amount": 4, "item": "Tarp" }
     ],
     "output": "Tarp Shelter",
-    "category": "Base Building"
+    "category": "Base Building",
+    "instructions": "Combine 4 Long Wooden Sticks with 4 Tarps in your inventory to craft a Tarp Shelter."
   },
   {
     "name": "Shelter Kit",
@@ -267,7 +295,8 @@
       { "amount": 4, "item": "Wooden Stick" }
     ],
     "output": "Shelter Kit",
-    "category": "Base Building"
+    "category": "Base Building",
+    "instructions": "Combine 1 Rope with 4 Wooden Sticks in your inventory to craft a Shelter Kit."
   },
   {
     "name": "Watchtower Kit",
@@ -276,7 +305,8 @@
       { "amount": 4, "item": "Wooden Stick" }
     ],
     "output": "Watchtower Kit",
-    "category": "Base Building"
+    "category": "Base Building",
+    "instructions": "Combine 1 Rope with 4 Wooden Sticks in your inventory to craft a Watchtower Kit."
   },
   {
     "name": "Fence Kit",
@@ -285,7 +315,8 @@
       { "amount": 2, "item": "Wooden Stick" }
     ],
     "output": "Fence Kit",
-    "category": "Base Building"
+    "category": "Base Building",
+    "instructions": "Combine 1 Rope with 2 Wooden Sticks in your inventory to craft a Fence Kit."
   },
   {
     "name": "Flag Pole Kit",
@@ -294,7 +325,8 @@
       { "amount": 4, "item": "Wooden Stick" }
     ],
     "output": "Flag Pole Kit",
-    "category": "Base Building"
+    "category": "Base Building",
+    "instructions": "Combine 1 Rope with 4 Wooden Sticks in your inventory to craft a Flag Pole Kit."
   },
   {
     "name": "Wooden Crate",
@@ -303,7 +335,8 @@
       { "amount": 16, "item": "Nails" }
     ],
     "output": "Wooden Crate",
-    "category": "Base Building"
+    "category": "Base Building",
+    "instructions": "Combine 8 Planks with 16 Nails in your inventory to craft a Wooden Crate."
   },
   {
     "name": "Fire Barrel",
@@ -312,7 +345,8 @@
       { "amount": 1, "item": "Knife" }
     ],
     "output": "Fire Barrel",
-    "category": "Base Building"
+    "category": "Base Building",
+    "instructions": "Use a Knife on an Oil Barrel to craft a Fire Barrel."
   },
   {
     "name": "Fireplace",
@@ -321,7 +355,8 @@
       { "amount": 1, "item": "Rag or Bandage or Paper or Oak Bark or Firewood Bark" }
     ],
     "output": "Fireplace",
-    "category": "Survival"
+    "category": "Survival",
+    "instructions": "Combine a Short Stick with one of the following: Rag, Bandage, Paper, Oak Bark, or Firewood Bark to craft a Fireplace."
   },
   {
     "name": "Fireplace with Stone Ring",
@@ -330,7 +365,8 @@
       { "amount": 1, "item": "Stone" }
     ],
     "output": "Fireplace with Ring",
-    "category": "Survival"
+    "category": "Survival",
+    "instructions": "Combine a Fireplace Kit with a Stone in your inventory to craft a Fireplace with Stone Ring."
   },
   {
     "name": "Hand Drill Kit",
@@ -339,7 +375,8 @@
       { "amount": 1, "item": "Short Stick" }
     ],
     "output": "Hand Drill Kit",
-    "category": "Survival"
+    "category": "Survival",
+    "instructions": "Combine Oak Bark or Light Bark with a Short Stick in your inventory to craft a Hand Drill Kit."
   },
   {
     "name": "Fireplace (Advanced)",
@@ -348,7 +385,8 @@
       { "amount": 1, "item": "Stone" }
     ],
     "output": "Upgraded Fireplace",
-    "category": "Survival"
+    "category": "Survival",
+    "instructions": "Combine a Fireplace with a Stone in your inventory to upgrade it to an Advanced Fireplace."
   },
   {
     "name": "Torch",
@@ -357,7 +395,8 @@
       { "amount": 1, "item": "Rag or Fat" }
     ],
     "output": "Torch",
-    "category": "Survival"
+    "category": "Survival",
+    "instructions": "Combine a Short or Long Wooden Stick with a Rag or Fat in your inventory to craft a Torch."
   },
   {
     "name": "Gas Stove",
@@ -366,7 +405,8 @@
       { "amount": 1, "item": "Gas Stove" }
     ],
     "output": "Assembled Gas Stove",
-    "category": "Survival"
+    "category": "Survival",
+    "instructions": "Combine a Gas Canister with a Gas Stove in your inventory to assemble the Gas Stove."
   },
   {
     "name": "Gas Lamp",
@@ -375,7 +415,8 @@
       { "amount": 1, "item": "Gas Lamp" }
     ],
     "output": "Assembled Gas Lamp",
-    "category": "Survival"
+    "category": "Survival",
+    "instructions": "Combine a Gas Canister with a Gas Lamp in your inventory to assemble the Gas Lamp."
   },
   {
     "name": "Stone Knife",
@@ -384,7 +425,8 @@
       { "amount": 1, "item": "Small Stone" }
     ],
     "output": "Stone Knife",
-    "category": "Survival"
+    "category": "Survival",
+    "instructions": "Combine two Small Stones in your inventory to craft a Stone Knife."
   },
   {
     "name": "Small Stone",
@@ -393,15 +435,17 @@
       { "amount": 1, "item": "Pickaxe" }
     ],
     "output": "Small Stone",
-    "category": "Survival"
+    "category": "Survival",
+    "instructions": "Use a Pickaxe on a Stone to craft a Small Stone."
   },
   {
-    "name": "Fertilizer",
+    "name": "Fertilizer (Garden Lime)",
     "ingredients": [
       { "amount": 0.1, "item": "Guts" },
       { "amount": 0.1, "item": "Plant Material" }
     ],
     "output": "Fertilizer (Garden Lime)",
-    "category": "Survival"
+    "category": "Survival",
+    "instructions": "Combine small amounts (0.1) of Guts and Plant Material in your inventory to craft Fertilizer (Garden Lime)."
   }
 ]
