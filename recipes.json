@@ -1,0 +1,370 @@
+[
+  {
+    "item": "Bandage",
+    "category": "Medical",
+    "ingredients": ["Rag x1"],
+    "tools": [],
+    "instructions": ["Use a rag to craft a bandage."]
+  },
+  {
+    "item": "Rag",
+    "category": "Medical",
+    "ingredients": ["Torn Clothing x1"],
+    "tools": ["Knife"],
+    "instructions": ["Use a knife to tear clothing into rags."]
+  },
+  {
+    "item": "Wooden Spear",
+    "category": "Weapons",
+    "ingredients": ["Stick x1", "Sharp Stone x1"],
+    "tools": ["Knife"],
+    "instructions": ["Attach a sharp stone to a stick using a knife to craft a wooden spear."]
+  },
+  {
+    "item": "Stone Knife",
+    "category": "Weapons",
+    "ingredients": ["Sharp Stone x1", "Stick x1"],
+    "tools": [],
+    "instructions": ["Attach a sharp stone to a stick to craft a stone knife."]
+  },
+  {
+    "item": "Bone Knife",
+    "category": "Weapons",
+    "ingredients": ["Bone x2"],
+    "tools": [],
+    "instructions": ["Combine two bones to craft a bone knife."]
+  },
+  {
+    "item": "Wooden Arrow",
+    "category": "Ammunition",
+    "ingredients": ["Stick x1", "Feather x1", "Sharp Stone x1"],
+    "tools": ["Knife"],
+    "instructions": ["Use a knife to sharpen a stick and attach a feather and sharp stone to craft a wooden arrow."]
+  },
+  {
+    "item": "Improvised Fishing Rod",
+    "category": "Tools",
+    "ingredients": ["Stick x1", "Rope x1"],
+    "tools": [],
+    "instructions": ["Combine a stick and rope to craft an improvised fishing rod."]
+  },
+  {
+    "item": "Fishing Bait",
+    "category": "Food",
+    "ingredients": ["Guts x1"],
+    "tools": ["Knife"],
+    "instructions": ["Cut animal guts into small pieces using a knife to craft fishing bait."]
+  },
+  {
+    "item": "Campfire",
+    "category": "Building",
+    "ingredients": ["Stick x3", "Stone x3", "Rag x1"],
+    "tools": ["Knife"],
+    "instructions": ["Combine sticks, stones, and a rag to build a campfire."]
+  },
+  {
+    "item": "Improvised Shelter",
+    "category": "Building",
+    "ingredients": ["Stick x10", "Rope x5", "Cloth x3"],
+    "tools": ["Knife"],
+    "instructions": ["Use sticks, rope, and cloth to craft an improvised shelter."]
+  },
+  {
+    "item": "Improvised Backpack",
+    "category": "Clothing",
+    "ingredients": ["Rag x5", "Rope x3"],
+    "tools": ["Knife"],
+    "instructions": ["Craft an improvised backpack using rags and rope."]
+  },
+  {
+    "item": "Leather Sewing Kit",
+    "category": "Tools",
+    "ingredients": ["Metal Scraps x1", "Rope x1"],
+    "tools": [],
+    "instructions": ["Combine metal scraps and rope to make a leather sewing kit."]
+  },
+  {
+    "item": "Tanned Leather",
+    "category": "Materials",
+    "ingredients": ["Deer Pelt x1", "Garden Lime x1"],
+    "tools": [],
+    "instructions": ["Use garden lime on a deer pelt to tan it into leather."]
+  },
+  {
+    "item": "Leather Backpack",
+    "category": "Clothing",
+    "ingredients": ["Tanned Leather x5", "Leather Sewing Kit x1"],
+    "tools": [],
+    "instructions": ["Use tanned leather and a leather sewing kit to craft a leather backpack."]
+  },
+  {
+    "item": "Plank",
+    "category": "Materials",
+    "ingredients": ["Wooden Log x1"],
+    "tools": ["Handsaw or Hacksaw"],
+    "instructions": ["Cut a wooden log with a saw to make planks."]
+  },
+  {
+    "item": "Wooden Crate",
+    "category": "Storage",
+    "ingredients": ["Plank x4", "Nails x8"],
+    "tools": ["Hammer"],
+    "instructions": ["Use planks and nails with a hammer to build a wooden crate."]
+  },
+  {
+    "item": "Improvised Torch",
+    "category": "Tools",
+    "ingredients": ["Stick x1", "Rag x1"],
+    "tools": ["Lighter or Matches"],
+    "instructions": ["Wrap a rag around a stick and light it to make a torch."]
+  },
+  {
+    "item": "Improvised Suppressor",
+    "category": "Weapons",
+    "ingredients": ["Plastic Bottle x1", "Duct Tape x1"],
+    "tools": [],
+    "instructions": ["Attach a plastic bottle to a gun muzzle using duct tape to suppress sound."]
+  },
+  {
+    "item": "Wooden Fence Kit",
+    "category": "Building",
+    "ingredients": ["Plank x4", "Nails x4"],
+    "tools": ["Hammer"],
+    "instructions": ["Use planks and nails with a hammer to build a wooden fence kit."]
+  },
+  {
+    "item": "Improvised Handwraps",
+    "category": "Clothing",
+    "ingredients": ["Rag x2"],
+    "tools": [],
+    "instructions": ["Wrap rags around your hands for protection."]
+  },
+  {
+    "item": "Cooking Tripod",
+    "category": "Building",
+    "ingredients": ["Stick x3", "Rope x2"],
+    "tools": [],
+    "instructions": ["Use sticks and rope to craft a cooking tripod."]
+  },
+  {
+    "item": "Fireplace",
+    "category": "Building",
+    "ingredients": ["Stone x4", "Wood x4"],
+    "tools": [],
+    "instructions": ["Build a fireplace using stones and wood."]
+  }, 
+  {
+    "item": "Tripwire Trap",
+    "category": "Traps",
+    "ingredients": ["Wire x3", "Stick x2"],
+    "tools": ["Pliers"],
+    "instructions": ["Use wire and sticks to set up a tripwire trap."]
+  },
+  {
+    "item": "Snare Trap",
+    "category": "Traps",
+    "ingredients": ["Wire x2", "Stick x1"],
+    "tools": ["Pliers"],
+    "instructions": ["Combine wire and a stick to craft a snare trap."]
+  },
+  {
+    "item": "Fishnet Trap",
+    "category": "Traps",
+    "ingredients": ["Fishing Net x1", "Rope x2", "Stick x3"],
+    "tools": [],
+    "instructions": ["Use a fishing net, rope, and sticks to create a fishnet trap."]
+  },
+  {
+    "item": "Barbed Wire",
+    "category": "Building",
+    "ingredients": ["Wire x3", "Pliers"],
+    "tools": ["Pliers"],
+    "instructions": ["Use wire and pliers to craft barbed wire."]
+  },
+  {
+    "item": "Flag Pole Kit",
+    "category": "Building",
+    "ingredients": ["Plank x4", "Nails x6", "Rope x2"],
+    "tools": ["Hammer"],
+    "instructions": ["Use planks, nails, and rope with a hammer to build a flag pole kit."]
+  },
+  {
+    "item": "Fence Kit",
+    "category": "Building",
+    "ingredients": ["Plank x8", "Nails x10"],
+    "tools": ["Hammer"],
+    "instructions": ["Use planks and nails with a hammer to craft a fence kit."]
+  },
+  {
+    "item": "Watchtower Kit",
+    "category": "Building",
+    "ingredients": ["Plank x12", "Nails x16", "Rope x4"],
+    "tools": ["Hammer"],
+    "instructions": ["Use planks, nails, and rope with a hammer to craft a watchtower kit."]
+  },
+  {
+    "item": "Improvised Splint",
+    "category": "Medical",
+    "ingredients": ["Stick x2", "Rag x1"],
+    "tools": [],
+    "instructions": ["Use sticks and a rag to craft an improvised splint."]
+  },
+  {
+    "item": "Fire Barrel",
+    "category": "Building",
+    "ingredients": ["Metal Barrel x1", "Wood x4"],
+    "tools": [],
+    "instructions": ["Combine a metal barrel with wood to craft a fire barrel."]
+  },
+  {
+    "item": "Leather Shelter",
+    "category": "Building",
+    "ingredients": ["Tanned Leather x4", "Stick x6", "Rope x4"],
+    "tools": [],
+    "instructions": ["Use tanned leather, sticks, and rope to build a leather shelter."]
+  }, 
+  {
+    "item": "Tier 1 Shelter Kit",
+    "category": "Building",
+    "ingredients": ["Stick x50", "Rope x4"],
+    "tools": [],
+    "instructions": ["Combine 50 sticks and 4 ropes to craft a Tier 1 shelter frame."]
+  },
+  {
+    "item": "Tier 2 Leather Shelter Kit",
+    "category": "Building",
+    "ingredients": ["Stick x50", "Rope x4", "Tanned Leather x4"],
+    "tools": [],
+    "instructions": ["Add tanned leather to a Tier 1 shelter frame to upgrade to a Tier 2 Leather Shelter."]
+  },
+  {
+    "item": "Tier 3 Tarp Shelter Kit",
+    "category": "Building",
+    "ingredients": ["Stick x50", "Rope x4", "Tarp x1"],
+    "tools": [],
+    "instructions": ["Add a tarp to a Tier 1 shelter frame to upgrade to a Tier 3 Tarp Shelter."]
+  },
+  {
+    "item": "Camouflage Net Cover",
+    "category": "Building",
+    "ingredients": ["Camouflage Net x1", "Rope x1"],
+    "tools": [],
+    "instructions": ["Use a rope to secure a camouflage net as a cover for your shelter or fence."]
+  },
+  {
+    "item": "Fence Frame",
+    "category": "Building",
+    "ingredients": ["Fence Kit x1", "Plank x10", "Nails x20"],
+    "tools": ["Hammer"],
+    "instructions": ["Build a fence frame using a placed fence kit, planks, and nails."]
+  },
+  {
+    "item": "Fence Wall",
+    "category": "Building",
+    "ingredients": ["Fence Frame x1", "Plank x10", "Nails x20"],
+    "tools": ["Hammer"],
+    "instructions": ["Upgrade a fence frame into a wall using additional planks and nails."]
+  },
+  {
+    "item": "Fence Gate",
+    "category": "Building",
+    "ingredients": ["Fence Wall x1", "Metal Wire x1"],
+    "tools": ["Pliers"],
+    "instructions": ["Add metal wire to a wall to convert it into a gate."]
+  },
+  {
+    "item": "Watchtower Frame",
+    "category": "Building",
+    "ingredients": ["Watchtower Kit x1", "Plank x20", "Nails x20"],
+    "tools": ["Hammer"],
+    "instructions": ["Build a watchtower frame with a placed kit, planks, and nails."]
+  },
+  {
+    "item": "Watchtower Level Upgrade",
+    "category": "Building",
+    "ingredients": ["Watchtower Frame x1", "Plank x20", "Nails x20"],
+    "tools": ["Hammer"],
+    "instructions": ["Add more planks and nails to a watchtower frame to build higher levels."]
+  }, 
+  {
+    "item": "Fishnet Trap",
+    "category": "Traps",
+    "ingredients": ["Netting x1", "Rope x2", "Long Stick x2"],
+    "tools": [],
+    "instructions": ["Combine netting, rope, and long sticks to craft a fishnet trap."]
+  },
+  {
+    "item": "Small Fish Trap",
+    "category": "Traps",
+    "ingredients": ["Plastic Bottle x1", "Knife"],
+    "tools": ["Knife"],
+    "instructions": ["Cut a plastic bottle with a knife to craft a small fish trap."]
+  },
+  {
+    "item": "Tripwire Trap",
+    "category": "Traps",
+    "ingredients": ["Metal Wire x1", "Stick x2"],
+    "tools": [],
+    "instructions": ["Combine metal wire and sticks to set up a tripwire trap."]
+  },
+  {
+    "item": "Snare Trap",
+    "category": "Traps",
+    "ingredients": ["Metal Wire x1", "Long Stick x1"],
+    "tools": [],
+    "instructions": ["Combine metal wire and a long stick to create a snare trap."]
+  },
+  {
+    "item": "Bear Trap",
+    "category": "Traps",
+    "ingredients": ["Bear Trap (found item)"],
+    "tools": [],
+    "instructions": ["Place a bear trap from your inventory. It cannot be crafted, only placed."]
+  },
+  {
+    "item": "Improvised Tripwire Grenade Trap",
+    "category": "Traps",
+    "ingredients": ["Tripwire Trap x1", "Grenade x1"],
+    "tools": [],
+    "instructions": ["Attach a grenade to a tripwire trap to make an improvised explosive trap."]
+  }, 
+  {
+    "item": "Cooking Pot with Tripod",
+    "category": "Cooking",
+    "ingredients": ["Cooking Tripod", "Cooking Pot"],
+    "tools": [],
+    "instructions": ["Attach a Cooking Pot to a deployed Cooking Tripod over a lit fireplace."]
+  },
+  {
+    "item": "Cooking Pot with Stick",
+    "category": "Cooking",
+    "ingredients": ["Long Wooden Stick", "Cooking Pot"],
+    "tools": [],
+    "instructions": ["Attach a Cooking Pot to a Long Wooden Stick and place it over a fireplace."]
+  },
+  {
+    "item": "Cooking Pot with Gas Stove",
+    "category": "Cooking",
+    "ingredients": ["Gas Stove", "Cooking Pot", "Gas Canister"],
+    "tools": [],
+    "instructions": ["Attach a Cooking Pot to a Gas Stove with a Gas Canister to cook food anywhere."]
+  },
+  {
+    "item": "Baking Tray with Frying Pan",
+    "category": "Cooking",
+    "ingredients": ["Baking Tray", "Frying Pan"],
+    "tools": [],
+    "instructions": ["Use a Frying Pan on a Baking Tray inside a Gas Stove or Indoor Oven to cook food."]
+  },
+  {
+    "item": "Sharpen Stick for Cooking",
+    "category": "Cooking",
+    "ingredients": ["Long Wooden Stick", "Knife"],
+    "tools": ["Knife"],
+    "instructions": ["Sharpen a Long Wooden Stick with a knife to use it for roasting food over a fire."]
+     } 
+    ]  
+
+
+
+
