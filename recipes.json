@@ -2,11 +2,11 @@
   {
     "name": "Improvised Rope",
     "ingredients": [
-      { "amount": 6, "item": "Rags" }
+      { "amount": 12, "item": "Rags" }
     ],
     "output": "Improvised Rope",
     "category": "Crafting Resources",
-    "instructions": "Tear 6 Rags from clothing items or find them. Combine the 6 Rags in your inventory to craft an Improvised Rope."
+    "instructions": "Tear 12 Rags from clothing items or find them. Combine the 6 Rags in your inventory to craft an Improvised Rope."
   },
   {
     "name": "Improvised Rope",
