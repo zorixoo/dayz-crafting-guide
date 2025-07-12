@@ -16,27 +16,49 @@ function displayRecipes(list) {
   container.innerHTML = '';
 
   list.forEach(recipe => {
+    const name = recipe.name ?? 'Unnamed Recipe';
+    const category = recipe.category ?? 'Uncategorized';
     const ingredientsText = Array.isArray(recipe.ingredients)
       ? recipe.ingredients
-          .map(i => `${i.amount ?? '?'} × ${i.item ?? i}`)  // fallback to i if no item property
+          .map(i => `${i.amount ?? '?'} × ${i.item ?? i}`)
           .join(', ')
       : 'None';
 
+    const fullCraftText = `Recipe: ${name}\nCategory: ${category}\nIngredients: ${ingredientsText}`;
+
     const div = document.createElement('div');
     div.className = 'recipe-item';
-    div.setAttribute('data-category', recipe.category ?? 'Uncategorized');
+    div.setAttribute('data-category', category);
     div.innerHTML = `
-      <h2>${recipe.name ?? 'Unnamed Recipe'}</h2>
-      <p><strong>Category:</strong> ${recipe.category ?? 'Uncategorized'}</p>
+      <h2>${name}</h2>
+      <p><strong>Category:</strong> ${category}</p>
       <p><strong>Ingredients:</strong> ${ingredientsText}</p>
+      <button class="copy-btn" data-craft="${fullCraftText.replace(/"/g, '&quot;')}">Copy Craft</button>
     `;
 
     // Reset animation to replay on each append
     div.style.animation = 'none';
-    div.offsetHeight; // Trigger reflow to restart animation
+    div.offsetHeight;
     div.style.animation = '';
 
     container.appendChild(div);
+  });
+
+  // Set up copy button event listeners
+  document.querySelectorAll('.copy-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const craftText = button.getAttribute('data-craft');
+      navigator.clipboard.writeText(craftText)
+        .then(() => {
+          button.textContent = 'Copied!';
+          setTimeout(() => {
+            button.textContent = 'Copy Craft';
+          }, 1200);
+        })
+        .catch(() => {
+          button.textContent = 'Failed to copy';
+        });
+    });
   });
 }
 
