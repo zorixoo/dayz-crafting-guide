@@ -1,4 +1,4 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -26,7 +26,7 @@
 
   <!-- ✅ Canonical Link & Favicon (optional) -->
   <link rel="canonical" href="https://yourdomain.com/" />
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/favicon.png" type="image/png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -197,14 +197,55 @@
       line-height: 1.3;
     }
     @media (max-width: 640px) {
+      /* Body layout */
+      body {
+        margin: 10px;
+        max-width: 95vw;
+      }
+      /* Shrink font sizes slightly */
+      h1 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+      }
+      #search, #category-filter {
+        font-size: 14px;
+        padding: 8px;
+      }
+      /* Recipe list adjustments */
+      #recipe-list {
+        padding: 10px;
+        min-height: 250px;
+      }
+      /* Useful links container: stack vertically, make buttons full width */
       #useful-links {
+        position: static;
+        max-width: 100%;
+        padding: 10px 0;
         flex-direction: column;
-        align-items: flex-start;
-        max-width: 90vw;
+        gap: 10px;
+        background: rgba(0,0,0,0.6);
+      }
+      #useful-links .buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        min-width: auto;
+      }
+      #useful-links button {
+        width: auto;
+        flex: 1 1 40%;
+        max-width: 200px;
+        font-size: 15px;
+        text-align: center;
+        padding: 12px 8px;
+        margin: 4px;
       }
       #useful-links .info-text {
         max-width: 100%;
-        margin-top: 10px;
+        margin-top: 8px;
+        font-size: 13px;
+        text-align: center;
+        padding: 0 5px;
       }
     }
   </style>
@@ -222,6 +263,7 @@
       <button onclick="window.open('https://dayz.com', '_blank', 'noopener')">DayZ Official Website</button>
       <button onclick="window.open('https://dayz.fandom.com/wiki/DayZ_Wiki', '_blank', 'noopener')">DayZ Wiki</button>
       <button onclick="window.open('https://www.youtube.com/@zorixx110', '_blank', 'noopener')">My YouTube Channel</button>
+      <button onclick="window.location.href='basebuilding.html'">🧱 Base Building Guide</button>
     </div>
     <div class="info-text">
       Most in-game items are featured here. Please feel free to contact me with any suggestions or requests for new items to be added.
