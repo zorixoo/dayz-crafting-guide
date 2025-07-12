@@ -447,5 +447,26 @@
     "output": "Fertilizer (Garden Lime)",
     "category": "Survival",
     "instructions": "Combine small amounts (0.1) of Guts and Plant Material in your inventory to craft Fertilizer (Garden Lime)."
+  },
+  {
+    "name": "Bone Fishing Hook",
+    "ingredients": [
+      { "amount": 1, "item": "Bone" },
+      { "amount": 1, "item": "Knife" }
+    ],
+    "output": "Bone Fishing Hook",
+    "category": "Survival",
+    "instructions": "Use a Knife on a Bone to craft a Bone Fishing Hook."
+  },
+  {
+    "name": "Improvised Fishing Rod",
+    "ingredients": [
+      { "amount": 1, "item": "Long Wooden Stick" },
+      { "amount": 1, "item": "Rope" }
+  
+    ],
+    "output": "Improvised Fishing Rod",
+    "category": "Survival",
+    "instructions": "Combine a Long Wooden Stick, Improvised Fishing Hook, and Rope in your inventory to craft an Improvised Fishing Rod."
   }
 ]
