@@ -248,6 +248,91 @@
         padding: 0 5px;
       }
     }
+
+    /* Comment Sidebar Styles */
+    #comment-sidebar {
+      position: fixed;
+      top: 60px;
+      right: 10px;
+      width: 300px;
+      max-height: 80vh;
+      background-color: #304927;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #2c5a0f;
+      padding: 15px;
+      color: #d9e6c9;
+      font-family: 'Libertinus Mono', monospace;
+      display: flex;
+      flex-direction: column;
+      z-index: 1100;
+    }
+    #comment-sidebar h2 {
+      margin: 0 0 10px 0;
+      font-size: 1.4rem;
+      text-align: center;
+      border-bottom: 1px solid #4a633e;
+      padding-bottom: 8px;
+    }
+    #comments-list {
+      flex-grow: 1;
+      overflow-y: auto;
+      padding-right: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #4a633e;
+      border-radius: 5px;
+      background-color: #1f3d1f;
+    }
+    .comment-item {
+      padding: 8px 10px;
+      border-bottom: 1px solid #4a633e;
+      font-size: 14px;
+      line-height: 1.3;
+      word-wrap: break-word;
+    }
+    .comment-item:last-child {
+      border-bottom: none;
+    }
+    #comment-input {
+      resize: none;
+      width: 100%;
+      padding: 8px 10px;
+      font-family: 'Libertinus Mono', monospace;
+      font-size: 14px;
+      border-radius: 5px;
+      border: none;
+      background-color: #233d1f;
+      color: #d9e6c9;
+      margin-bottom: 8px;
+      box-sizing: border-box;
+    }
+    #comment-input::placeholder {
+      color: #b5a77c;
+    }
+    #submit-comment {
+      background-color: #3a6b27;
+      color: #d9e6c9;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 15px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    #submit-comment:hover {
+      background-color: #5ca64c;
+      transform: scale(1.05);
+    }
+
+    /* Responsive for smaller screens */
+    @media (max-width: 960px) {
+      #comment-sidebar {
+        position: static;
+        width: 95vw;
+        max-height: 300px;
+        margin: 20px auto 0 auto;
+        border-radius: 8px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -296,11 +381,75 @@
     </div>
   </div>
 
+  <!-- Comment Sidebar -->
+  <div id="comment-sidebar" aria-label="Comments Sidebar">
+    <h2>Comments</h2>
+    <div id="comments-list">Loading comments...</div>
+    <textarea id="comment-input" rows="3" placeholder="Write a comment..."></textarea>
+    <button id="submit-comment">Post Comment</button>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+  <script>
+    // TODO: Replace this config with your Firebase project's config
+    const firebaseConfig = {
+      apiKey: "AIzaSyDbmdxc1fwUpxbDIRuNFvcA_Kn6cDdBDQ4",
+      authDomain: "dayzcraftingguide-5c146.firebaseapp.com",
+      databaseURL: "https://dayzcraftingguide-5c146-default-rtdb.firebaseio.com",
+      projectId: "dayzcraftingguide-5c146",
+      storageBucket: "dayzcraftingguide-5c146.firebasestorage.app",
+      messagingSenderId: "530986413798",
+      appId: "1:530986413798:web:7e0cf818d685ef3550d527"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const database = firebase.database();
+
+    const commentsList = document.getElementById('comments-list');
+    const commentInput = document.getElementById('comment-input');
+    const submitBtn = document.getElementById('submit-comment');
+
+    submitBtn.addEventListener('click', () => {
+      const comment = commentInput.value.trim();
+      if (!comment) return alert('Please write a comment first.');
+
+      // Push comment to Firebase Realtime Database
+      const newCommentRef = database.ref('comments').push();
+      newCommentRef.set({
+        text: comment,
+        timestamp: Date.now()
+      });
+
+      commentInput.value = '';
+    });
+
+    // Listen for new comments and display them
+    database.ref('comments').on('value', snapshot => {
+      commentsList.innerHTML = ''; // Clear current list
+      const comments = snapshot.val();
+      if (comments) {
+        // Sort comments by timestamp ascending
+        const sortedComments = Object.values(comments).sort((a,b) => a.timestamp - b.timestamp);
+        sortedComments.forEach(comment => {
+          const div = document.createElement('div');
+          div.textContent = comment.text;
+          div.className = 'comment-item';
+          commentsList.appendChild(div);
+        });
+      } else {
+        commentsList.textContent = 'No comments yet. Be the first!';
+      }
+    });
+  </script>
+
   <script src="scripts.js"></script>
 
   <footer style="text-align:center; margin-top: 20px;">
     <a href="privacy.html" style="color: #b5a77c; text-decoration: underline;">Privacy Policy</a> |
     <a href="terms.html" style="color: #b5a77c; text-decoration: underline;">Terms of Service</a>
   </footer>
+
 </body>
 </html>
