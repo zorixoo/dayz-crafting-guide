@@ -6,7 +6,7 @@
     ],
     "output": "Improvised Rope",
     "category": "Crafting Resources",
-    "instructions": "Tear 12 Rags from clothing items or find them. Combine the 6 Rags in your inventory to craft an Improvised Rope."
+    "instructions": "Tear 12 Rags from clothing items or find them. Combine the 2 Stacks of 6 Rags in your inventory to craft an Improvised Rope."
   },
   {
     "name": "Improvised Rope",
@@ -352,11 +352,11 @@
     "name": "Fireplace",
     "ingredients": [
       { "amount": 1, "item": "Short Stick" },
-      { "amount": 1, "item": "Rag or Bandage or Paper or Oak Bark or Firewood Bark" }
+      { "amount": 1, "item": "Rag or Bandage or Paper or Oak Bark or Light Bark or Firewood" }
     ],
     "output": "Fireplace",
     "category": "Survival",
-    "instructions": "Combine a Short Stick with one of the following: Rag, Bandage, Paper, Oak Bark, or Firewood Bark to craft a Fireplace."
+    "instructions": "Combine a Short Stick with one of the following: Rag, Bandage, Paper, Oak Bark, or Light Bark OR Firewood to craft a Fireplace."
   },
   {
     "name": "Fireplace with Stone Ring",
@@ -467,6 +467,44 @@
     ],
     "output": "Improvised Fishing Rod",
     "category": "Survival",
-    "instructions": "Combine a Long Wooden Stick, Improvised Fishing Hook, and Rope in your inventory to craft an Improvised Fishing Rod."
-  }
+    "instructions": "Combine a Long Wooden Stick and Rope in your inventory to craft an Improvised Fishing Rod."
+  }, {
+  "name": "Barbed Wire Baseball Bat",
+  "ingredients": [
+    { "amount": 1, "item": "Baseball Bat" },
+    { "amount": 1, "item": "Barbed Wire" }
+  ],
+  "output": "Barbed Wire Baseball Bat",
+  "category": "Weapons",
+  "instructions": "Wrap Barbed Wire around a Baseball Bat to craft a Barbed Wire Baseball Bat."
+}, {
+  "name": "Long Wooden Stick",
+  "ingredients": [
+    { "amount": 1, "item": "Bush" },
+    { "amount": 1, "item": "Knife or Tool" }
+  ],
+  "output": "Long Wooden Stick",
+  "category": "Crafting Resources",
+  "instructions": "Use a Knife or Tool on a Bush to get a Long Wooden Stick."
+},
+{
+  "name": "Firewood",
+  "ingredients": [
+    { "amount": 1, "item": "Tree" },
+    { "amount": 1, "item": "Hatchet or Splitting Axe" }
+  ],
+  "output": "Firewood",
+  "category": "Crafting Resources",
+  "instructions": "Use a Hatchet or Splitting Axe on a Tree Or Wooden Log to get Firewood."
+}, {
+  "name": "Improvised Fishing Hook",
+  "ingredients": [
+    { "amount": 1, "item": "Short Stick" },
+    { "amount": 1, "item": "Knife" }
+  ],
+  "output": "Improvised Fishing Hook",
+  "category": "Survival",
+  "instructions": "Use a Knife on a Short Stick to craft a wooden Improvised Fishing Hook."
+}
+ 
 ]
