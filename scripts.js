@@ -24,7 +24,9 @@ function displayRecipes(list) {
           .join(', ')
       : 'None';
 
-    const fullCraftText = `Recipe: ${name}\nCategory: ${category}\nIngredients: ${ingredientsText}`;
+    const instructionsText = recipe.instructions ?? ''; // New line
+
+    const fullCraftText = `Recipe: ${name}\nCategory: ${category}\nIngredients: ${ingredientsText}${instructionsText ? `\nInstructions: ${instructionsText}` : ''}`;
 
     const div = document.createElement('div');
     div.className = 'recipe-item';
@@ -33,6 +35,7 @@ function displayRecipes(list) {
       <h2>${name}</h2>
       <p><strong>Category:</strong> ${category}</p>
       <p><strong>Ingredients:</strong> ${ingredientsText}</p>
+      ${instructionsText ? `<p><strong>Instructions:</strong> ${instructionsText}</p>` : ''}
       <button class="copy-btn" data-craft="${fullCraftText.replace(/"/g, '&quot;')}">Copy Craft</button>
     `;
 
