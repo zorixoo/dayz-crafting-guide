@@ -2,13 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>DayZ Crafting Guide</title>
 
   <!-- 🔍 SEO Meta Tags -->
   <meta name="description" content="The ultimate DayZ 1.28 crafting guide with every vanilla recipe. Easily filter, search, and explore survival items, weapons, tools, and more." />
   <meta name="keywords" content="DayZ crafting, DayZ 1.28 recipes, DayZ vanilla, DayZ map, DayZ guide, DayZ crafting guide, DayZ tools, DayZ backpack, DayZ weapons, DayZ survival tips" />
   <meta name="author" content="Jacob Freier" />
+  <meta name="robots" content="index, follow" />
+  <meta http-equiv="Content-Language" content="en" />
+  <meta name="theme-color" content="#233d1f" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
 
   <!-- 🌐 Open Graph for social sharing -->
   <meta property="og:type" content="website" />
@@ -17,12 +21,16 @@
   <meta property="og:url" content="https://yourdomain.com/" />
   <meta property="og:image" content="https://yourdomain.com/preview.jpg" />
   <meta property="og:site_name" content="DayZ Crafting Guide" />
+  <meta property="og:locale" content="en_US" />
+  <!-- <meta property="fb:app_id" content="your-app-id" /> -->
 
   <!-- 🐦 Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="DayZ Crafting Guide - All 1.28 Recipes" />
   <meta name="twitter:description" content="Search and explore all vanilla 1.28 DayZ recipes with filters and categories." />
   <meta name="twitter:image" content="https://yourdomain.com/preview.jpg" />
+  <meta name="twitter:site" content="@yourtwitterhandle" />
+  <meta name="twitter:creator" content="@yourtwitterhandle" />
 
   <!-- ✅ Canonical Link & Favicon (optional) -->
   <link rel="canonical" href="https://yourdomain.com/" />
@@ -333,6 +341,42 @@
         border-radius: 8px;
       }
     }
+
+    /* Cookie Consent Banner */
+    #cookie-consent {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(35, 61, 31, 0.9);
+      color: #d9e6c9;
+      padding: 15px 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.7);
+      font-family: 'Libertinus Mono', monospace;
+      font-size: 14px;
+      max-width: 90%;
+      z-index: 1200;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    #cookie-consent button {
+      background-color: #3a6b27;
+      color: #d9e6c9;
+      border: none;
+      border-radius: 6px;
+      padding: 8px 15px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    #cookie-consent button:hover {
+      background-color: #5ca64c;
+      transform: scale(1.05);
+    }
   </style>
 </head>
 <body>
@@ -392,6 +436,12 @@
     <button id="submit-comment">Post Comment</button>
   </div>
 
+  <!-- Cookie Consent Banner -->
+  <div id="cookie-consent" role="alert" aria-live="polite" aria-label="Cookie consent banner">
+    This website uses cookies to ensure you get the best experience.
+    <button id="accept-cookies" aria-label="Accept cookies">Accept</button>
+  </div>
+
   <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
   <script>
@@ -444,6 +494,36 @@
       } else {
         commentsList.textContent = 'No comments yet. Be the first!';
       }
+    });
+
+    // Cookie consent handling
+    const cookieConsent = document.getElementById('cookie-consent');
+    const acceptBtn = document.getElementById('accept-cookies');
+
+    function setCookie(name, value, days) {
+      const expires = new Date(Date.now() + days * 864e5).toUTCString();
+      document.cookie = name + '=' + encodeURIComponent(value) + '; expires=' + expires + '; path=/';
+    }
+
+    function getCookie(name) {
+      return document.cookie.split('; ').reduce((r, v) => {
+        const parts = v.split('=');
+        return parts[0] === name ? decodeURIComponent(parts[1]) : r
+      }, '');
+    }
+
+    function hideCookieBanner() {
+      cookieConsent.style.display = 'none';
+    }
+
+    // Check if cookie accepted
+    if (getCookie('cookiesAccepted') === 'true') {
+      hideCookieBanner();
+    }
+
+    acceptBtn.addEventListener('click', () => {
+      setCookie('cookiesAccepted', 'true', 365);
+      hideCookieBanner();
     });
   </script>
 
